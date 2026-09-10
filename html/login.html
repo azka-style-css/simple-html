@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-        <form action="dashboard.html" method="post">
+        <form onsubmit="authenticate(event); return false;">
             <h2>Login</h2>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required><br><br>
@@ -15,5 +15,6 @@
             <input type="password" id="password" name="password" required><br><br>
             <input type="submit" value="Login">
         </form>
+        <script src="../js/index.js"></script>
 </body>
 </html>
